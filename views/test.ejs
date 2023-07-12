@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <%= csv[0].Name %>
+    </p>
+    <form action="/test1" method="post">
+        <input type="submit">
+    </form>
+    <a id="a1" download="info.csv">download csv</a>
+    <script>
+        const a1 = document.getElementById('a1');
+        let data = 'hello';
+        console.log(data);
+        const blob = new Blob([data]);
+        a1.href = URL.createObjectURL(blob);
+    </script>
+</body>
+</html>

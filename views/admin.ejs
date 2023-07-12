@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Admin</title>
+</head>
+<body>
+    <div class="center">
+    <table>
+        <tr class="purple">
+            <th class="aqua">Item/Customer</th>
+            <th>Customer1</th>
+            <th>Customer2</th>
+            <th>Total</th>
+          </tr>
+          <tr class="gray">
+            <td class="yellow">Quantity</td>
+            <td><%= q1 %></td>
+            <td><%= q2 %></td>
+            <td><%= q1+q2 %></td>
+          </tr>
+          <tr class="aqua">
+            <td class="yellow">Weight</td>
+            <td><%= w1.toFixed(4) %></td>
+            <td><%= w2.toFixed(4) %></td>
+            <td><%= (w1+w2).toFixed(4) %></td>
+          </tr>
+          <tr class="gray">
+            <td class="yellow">Box Count</td>
+            <td><%= b1 %></td>
+            <td><%= b2 %></td>
+            <td><%= b1+b2 %></td>
+          </tr>
+    </table>
+</div>
+</body>
+</html>

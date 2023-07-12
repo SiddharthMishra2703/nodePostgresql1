@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>customer</title>
+</head>
+<body>
+    <div class="center">
+    <form action="/customer" method="post">
+        <label for="">Order Date</label>
+        <input type="date" name="a" required><br>
+        <label for="">Company</label>
+        <input type="text" pattern="[^ ]+" name="b" required><br>
+        <label for="">Owner</label>
+        <input type="text" pattern="[^ ]+" name="c" required><br>
+        <label for="">Item</label>
+        <input type="text" name="d" required><br>
+        <label for="">Quantity</label>
+        <input type="number" min="0" step="1" name="e" required><br>
+        <label for="">Weight</label>
+        <input type="number" step="0.0001" name="f" required><br>
+        <label for="">Request for Shipment</label>
+        <input type="text" name="g" required><br>
+        <label for="">Tracking ID</label>
+        <input type="text" name="h" required><br>
+        <label for="">Shipment Size</label>
+        <input type="number" name="i" required><br>
+        <label for="">Box Count</label>
+        <input type="number" name="j" required><br>
+        <label for="">Specification</label>
+        <input type="text" name="k" required><br>
+        <label for="">Checklist Quantity</label>
+        <input type="text" name="l" required><br>
+        <input type="hidden" value="<%= name %>" name="name">
+        <input type="submit" value="Submit" class="button">
+    </form>
+</div>
+</body>
+</html>
